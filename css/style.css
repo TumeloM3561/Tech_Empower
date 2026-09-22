@@ -1,0 +1,616 @@
+/* =========================================
+   TECH EMPOWER LABS - COMPACT WEBSITE CSS
+   ========================================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+header {
+    width: 100%;
+    background: #0b3d91;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #00c2ff;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 65vh;
+
+    background:
+        linear-gradient(
+            rgba(11, 61, 145, 0.82),
+            rgba(11, 61, 145, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 30px 20px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.btn {
+    display: inline-block;
+
+    background: #00c2ff;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 25px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #0b3d91;
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+section {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    margin-bottom: 25px;
+
+    font-size: 28px;
+}
+
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
+.about-preview p {
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SERVICE CARDS
+   ========================================= */
+
+.service-container,
+.product-container,
+.why-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 18px;
+}
+
+.card,
+.product-card,
+.why-container div {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover,
+.product-card:hover,
+.why-container div:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Icons */
+
+.card i,
+.product-card i {
+    font-size: 38px;
+
+    color: #0b3d91;
+
+    margin-bottom: 12px;
+}
+
+.card h3,
+.product-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.card p,
+.why-container p {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.cta {
+    background: #0b3d91;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    margin-bottom: 40px;
+
+    padding: 45px 25px;
+}
+
+.cta h2 {
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+
+    margin: 15px auto;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #06275f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.socials {
+    margin-top: 12px;
+}
+
+.socials i {
+    font-size: 20px;
+
+    margin: 0 7px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.socials i:hover {
+    color: #00c2ff;
+}
+
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #0b3d91;
+
+    outline: none;
+}
+
+form button {
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   REQUEST QUOTE PAGE
+   ========================================= */
+
+.quote-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+.quote-container {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.quote-container h1 {
+    text-align: center;
+    color: #0b3d91;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.quote-container > p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Quote form groups */
+
+.quote-form-group {
+    margin-bottom: 15px;
+}
+
+.quote-form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.quote-form-group input,
+.quote-form-group select,
+.quote-form-group textarea {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+.quote-form-group textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+.quote-form-group input:focus,
+.quote-form-group select:focus,
+.quote-form-group textarea:focus {
+    outline: none;
+
+    border-color: #0b3d91;
+}
+
+
+/* Quote submit button */
+
+.submit-quote-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #0b3d91;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.submit-quote-btn:hover {
+    background: #00c2ff;
+}
+
+
+/* Quote message */
+
+.quote-form-message {
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        margin-top: 8px;
+    }
+
+    .nav-links li {
+        margin: 0 9px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .quote-container {
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .nav-links li {
+        margin: 0 6px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    .card,
+    .product-card,
+    .why-container div {
+        padding: 18px;
+    }
+
+}

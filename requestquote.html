@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request a Quote | Tech Empower Labs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="Pictures/logo2.png"
+                 alt="Tech Empower Labs Logo">
+
+            <h2>Tech Empower Labs</h2>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- Request Quote -->
+
+<section class="quote-page">
+
+    <div class="quote-container">
+
+        <h1>Request a Quote</h1>
+
+        <p>
+            Tell us what you need and our team will get back to you
+            with a quotation.
+        </p>
+
+
+        <form id="quoteForm">
+
+
+            <!-- Name -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="quoteName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="quoteEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="quote-form-group">
+
+                <label for="quotePhone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="quotePhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Organisation -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteOrganisation">
+                    School / Organisation
+                </label>
+
+                <input
+                    type="text"
+                    id="quoteOrganisation"
+                    placeholder="Enter school or organisation"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Service -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteService">
+                    Service Required
+                </label>
+
+                <select id="quoteService" required>
+
+                    <option value="">
+                        Select a service
+                    </option>
+
+                    <option value="Computer Lab Installation">
+                        Computer Lab Installation
+                    </option>
+
+                    <option value="Network Installation">
+                        Network Installation
+                    </option>
+
+                    <option value="Computer Maintenance">
+                        Computer Maintenance
+                    </option>
+
+                    <option value="ICT Equipment">
+                        ICT Equipment
+                    </option>
+
+                    <option value="Technical Support">
+                        Technical Support
+                    </option>
+
+                    <option value="Computer and Laptop Supply">
+                        Computer and Laptop Supply
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Quantity -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteQuantity">
+                    Estimated Quantity
+                </label>
+
+                <input
+                    type="number"
+                    id="quoteQuantity"
+                    min="1"
+                    placeholder="e.g. 20"
+                >
+
+            </div>
+
+
+            <!-- Message -->
+
+            <div class="quote-form-group">
+
+                <label for="quoteMessage">
+                    Requirements / Additional Information
+                </label>
+
+                <textarea
+                    id="quoteMessage"
+                    placeholder="Tell us more about what you need..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="submit-quote-btn"
+            >
+                Submit Quote Request
+            </button>
+
+
+            <!-- Message -->
+
+            <p
+                id="quoteFormMessage"
+                class="quote-form-message"
+            ></p>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Tech Empower Labs | Empowering Education Through Technology
+    </p>
+
+    <div class="socials">
+
+        <i class="fab fa-facebook"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-linkedin"></i>
+
+        <i class="fab fa-whatsapp"></i>
+
+    </div>
+
+</footer>
+
+
+<!-- Supabase -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
